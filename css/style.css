@@ -1,0 +1,43 @@
+.buttons-input {
+    display: flex;  /* defaults to row layout */
+    flex-direction: row;
+    justify-content: center;  /* centers items horizontally in row layout */
+    align-items: center;  /* centers vertically in row layout */
+    /* flex-direction: column; will set layout to column instead of row */
+}
+#result {
+    color: black;
+    font-size: 50px;
+    font-family: Helvetica; 
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+input {
+    border: solid 4px gray;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 0 0 0 15px;
+}
+button {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    margin: 15px;
+}
+button:hover {
+    background-color: white;
+    color: gray;
+}
+
+.num {
+    font-size: 40px;
+    text-align: center;
+}
