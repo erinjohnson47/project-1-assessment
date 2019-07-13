@@ -15,17 +15,24 @@ document.addEventListener('click', e => {
             finalResult = parseInt(result.innerText) + parseInt
             (num.value);
             result.innerText = finalResult;
+            if (finalResult < 0) {
+                result.style.color = 'red';
+            } else {
+                result.style.color = 'black'
+            }
             break;
         case sub: 
             finalResult = parseInt(result.innerText) - parseInt(num.value);
             result.innerText = finalResult;
+            if (finalResult < 0) {
+                result.style.color = 'red';
+            } else {
+                result.style.color = 'black'
+            }
             break;
     }
 });
 
-if (finalResult < 0) {
-    result.innerText.style.color = 'red';
-}
 
 
 
